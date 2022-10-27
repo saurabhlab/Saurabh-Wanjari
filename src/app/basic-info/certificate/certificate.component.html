@@ -1,0 +1,50 @@
+<!-- https://www.positronx.io/angular-responsive-carousel-examples/ -->
+
+<!-- <div class="container-fluid"> -->
+
+    <div class="blog" id="blogs">
+        <div class="container">
+            <div class="service-head text-center">
+            <h4>Certifications</h4>
+            <h3>MY <span>Certifications</span></h3>
+            <span class="border one"></span>
+        </div>
+  
+      
+    <ngb-carousel
+    #ngcarousel
+    [showNavigationArrows]="true" 
+    [showNavigationIndicators]="true"
+    [interval]="5000"
+    [keyboard]="true"
+    [pauseOnHover]="true"
+    [wrap]="true"
+    [activeId]="'1'"
+
+>
+<!-- (slide)="slideActivate($event)" -->
+    
+
+      <ng-template ngbSlide *ngFor="let img of certs" id="{{img.id}}">
+        <div class="picsum-img-wrapper">
+            <img [src]="img.src" alt="{{img.title}}">
+          </div>
+          <!-- <div class="carousel-caption">
+            <h3>{{img.title}}</h3>
+            <p>{{img.note}}</p>
+          </div> -->
+      </ng-template>
+
+    </ngb-carousel>
+
+
+
+
+
+    <!-- <div class="text-center">
+        <button (click)="navigateToSlide('3')">Go to Slide Four</button>
+        <button (click)="getToPrev()">Prev</button>
+        <button (click)="goToNext()">Next</button>
+        <button (click)="stopCarousel()">Pause</button>
+      </div>      -->
+      </div>

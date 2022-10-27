@@ -1,0 +1,47 @@
+<div class="service-head text-center">
+    <h3>MY <span> Technical Skills</span></h3>
+</div>
+
+<div class="portfolio" id="port">
+    <div class="service-head text-center">
+            <h4>Frontend</h4>
+            <span class="border"></span>
+        </div>
+<div class="portfolio-grids">
+
+    <div class="sap_tabs">
+        <div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+            <ul class="resp-tabs-list">
+                <li *ngFor="let skill of frontendSkills; let i = index" class="resp-tab-item " aria-controls="tab_item-" role="tab">
+                   <a  href="{{skill.link}}" target="_blank" rel="noopener noreferrer">						
+                             <Img src="{{skill.imgSrc}}" alt="{{skill.imgAltText}}" class="skills-img" > 
+                  </a>
+                  <span>{{skill.skillName}}</span>
+                </li>	
+             </ul> 
+            </div>
+        </div>			 
+</div>
+</div>
+
+<div class="portfolio" id="port">
+    <div class="service-head text-center">
+            <h4>Backend</h4>
+            <span class="border"></span>
+        </div>
+<div class="portfolio-grids">
+
+    <div class="sap_tabs">
+        <div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+            <ul class="resp-tabs-list">
+                <li *ngFor="let skill of backendSkills; let i = index" class="resp-tab-item " aria-controls="tab_item-" role="tab">
+                   <a  href="{{skill.link}}" target="_blank" rel="noopener noreferrer">						
+                             <Img src="{{skill.imgSrc}}" alt="{{skill.imgAltText}}" class="skills-img" > 
+                  </a>
+                  <span>{{skill.skillName}}</span>
+                </li>	
+             </ul> 
+            </div>
+        </div>			 
+</div>
+</div>
